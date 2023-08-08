@@ -1,8 +1,16 @@
 var countDownDate = new Date(2023,7,10,18)
 var stereo = new Audio("./src/StereoLove.mp3")
-var cantgetover = new Audio("./src/cantGetOver.mp3")
-audio.loop = true
+var cantGetOver = new Audio("./src/cantGetOver.mp3")
+stereo.loop = true
 
+function playGetOver(){
+  cantGetOver.play()
+  document.getElementById('id1').onclick = function(){stopGetOver();} 
+}
+function stopGetOver(){
+  cantGetOver.pause()
+  document.getElementById('id1').onclick = function(){playGetOver();}
+}
 
 //Cronometro
 var cronometro = setInterval(function() {
