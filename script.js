@@ -1,4 +1,4 @@
-var countDownDate = new Date(2023,11,16,23:59)
+var countDownDate = new Date(2023,11,16,23,59)
 var stereo = new Audio("./src/StereoLove.mp3")
 var cantGetOver = new Audio("./src/cantGetOver.mp3")
 stereo.loop = true
