@@ -29,3 +29,7 @@ var cronometro = setInterval(function() {
       stereo.play()
     }
   }, 1000)
+
+function trocarVideo(e){
+  document.getElementById("video").src = e
+}
